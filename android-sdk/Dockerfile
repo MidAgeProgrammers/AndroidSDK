@@ -81,4 +81,11 @@ RUN apt-get update -y && \
     (rm /tmp/*.pub 2> /dev/null || true)
 
 ADD supervisord.conf /etc/supervisor/conf.d/
+
+RUN apt-get update && apt-get install --no-install-recommends -y build-essential git ruby2.3-dev \
+    && gem install fastlane \
+    && gem install bundler \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+    && apt-get autoremove -y && apt-get clean
+    
 CMD ["/usr/bin/supervisord"]
