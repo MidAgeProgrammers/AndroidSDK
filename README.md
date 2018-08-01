@@ -1,6 +1,8 @@
 # AndroidSDK
 
-Android SDK development environment Docker image
+This repository is forked from [thyrlian/AdnroidSDK](https://github.com/thyrlian/AndroidSDK) and customized with **fastlane** support.
+
+Android SDK development environment Docker image 
 
 [![Docker Hub](https://img.shields.io/badge/Docker%20Hub-info-blue.svg)](https://hub.docker.com/r/thyrlian/android-sdk/)
 [![Build Status](https://travis-ci.org/thyrlian/AndroidSDK.svg?branch=master)](https://travis-ci.org/thyrlian/AndroidSDK)
